@@ -1,4 +1,4 @@
-# job-market-salary-analysis
+# Data Science Job Market Salary Analysis
 ## 📊 Overview
 
 This project explores salary trends in the data science and analytics job market using a dataset of global job postings. The goal is to understand how factors such as experience level, job title, and remote work percentage influence salary distribution.
