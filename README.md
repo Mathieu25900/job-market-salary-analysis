@@ -10,7 +10,7 @@ The analysis focuses on identifying patterns in compensation while also consider
 ## 🎯 Objectives
 
 - Understand how salary varies by **experience level**
-- Analyze salary differences across **job titles**
+- Analyze how salary varies across different job titles
 - Explore the relationship between **remote work and compensation**
 - Compare **mean vs median salaries** to detect outliers
 - Evaluate **data reliability using sample size**
@@ -20,7 +20,7 @@ The analysis focuses on identifying patterns in compensation while also consider
 ## 📁 Dataset
 
 - Source: Data Science Job Salaries Dataset (Kaggle)
-- Records: ~600+ job entries
+- Approximately 600 job records
 - Features include:
   - Job title
   - Salary in USD
@@ -46,4 +46,13 @@ The analysis focuses on identifying patterns in compensation while also consider
 We compare average salary across different experience levels to understand how career progression impacts earnings.
 
 ```python
+# Average salary by experience level to understand career progression impact
 df.groupby("experience_level")["salary_in_usd"].mean()
+```
+
+Key Insights
+Salary increases significantly with experience level, showing a clear career progression trend.
+Mean salaries are often higher than median values, indicating the presence of high-income outliers.
+Job titles with higher salaries tend to have smaller sample sizes, making them less statistically reliable.
+Data Scientist, Data Engineer, and Data Analyst roles represent the most stable and well-represented salary groups.
+Remote work shows variation in salary but is less consistent compared to experience level and job title.
