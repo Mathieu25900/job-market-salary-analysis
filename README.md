@@ -6,6 +6,8 @@ This project explores what factors influence salaries in data science roles usin
 
 I used SQL, Python (pandas, matplotlib), and exploratory data analysis techniques to analyze trends and communicate insights visually.
 
+Rather than just looking at raw numbers, I focused on understanding patterns that can help explain how data roles are valued in the job market.
+
 ---
 
 ## 📂 Dataset
@@ -36,23 +38,26 @@ The dataset contains job-related salary information for data science roles, incl
 
 ## ❓ Key Questions Explored
 
-- How does salary vary by experience level?  
-- Which job titles have the highest salaries?  
-- Does company size affect compensation?  
-- Does remote work influence salary levels?  
-- What combinations of job title and experience pay the most?  
+I approached this analysis by asking:
+
+- How does salary change with experience level?
+- Which job titles tend to pay the most?
+- Does company size influence compensation?
+- Is remote work associated with higher or lower salaries?
+- Which combinations of job title and experience level are most valuable?
 
 ---
 
 ## 🗄️ SQL Workflow
 
-The dataset was loaded into a SQLite database to enable structured querying.
+To make the analysis more structured, I loaded the dataset into a SQLite database and used SQL queries to explore trends.
 
 ### Example SQL Query:
 
-```sql id="sql1"
+```sql
 SELECT
     experience_level,
     AVG(salary_in_usd) AS avg_salary
 FROM salaries
 GROUP BY experience_level;
+```
