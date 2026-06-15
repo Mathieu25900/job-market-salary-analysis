@@ -1,6 +1,6 @@
-# 📊 Data Science Salary Analysis (SQL + Python Project)
+# Data Science Salary Analysis (SQL + Python Project)
 
-## 🧠 Overview
+## Overview
 
 This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal is to understand how **experience level, job title, company size, and remote work arrangements** relate to compensation.
 
@@ -8,7 +8,7 @@ I used **SQL, Python (pandas, matplotlib)**, and exploratory data analysis techn
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset contains job-related salary information for data science roles, including:
 
@@ -25,7 +25,7 @@ Source: Kaggle – Data Science Job Salaries dataset
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - Python (Pandas, NumPy, Matplotlib)
 - SQL (SQLite via `sqlite3`)
@@ -34,7 +34,7 @@ Source: Kaggle – Data Science Job Salaries dataset
 
 ---
 
-## 🔍 Key Questions Explored
+## Key Questions Explored
 
 - How does salary vary by experience level?
 - Which job titles have the highest salaries?
@@ -44,7 +44,7 @@ Source: Kaggle – Data Science Job Salaries dataset
 
 ---
 
-## 🗄️ SQL Workflow
+## SQL Workflow
 
 The dataset was loaded into a SQLite database to enable structured querying.
 
