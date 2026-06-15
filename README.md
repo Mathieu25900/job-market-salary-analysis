@@ -61,3 +61,47 @@ SELECT
 FROM salaries
 GROUP BY experience_level;
 ```
+
+---
+
+## 📊 Key Insights
+
+From the analysis, a few clear patterns emerged:
+
+- Experience level is the strongest factor influencing salary  
+- Senior roles (SE, EX) earn significantly more than entry-level positions  
+- Job title plays a major role in salary differences  
+- Larger companies tend to offer higher average compensation  
+- Remote work shows mixed but interesting patterns depending on role type  
+
+Overall, salary is driven by a combination of experience, specialization, and company structure.
+
+---
+
+## 📈 Visualizations
+
+The following visualizations were created using Python:
+
+- Salary distribution by experience level  
+- Average salary by company size  
+- Salary comparison across job titles  
+- Remote ratio vs salary analysis  
+- Top-paying job titles  
+
+These visuals helped translate raw data into meaningful insights.
+
+---
+
+## 🧠 Conclusion
+
+This project demonstrates how SQL and Python can be used together to analyze real-world salary trends in the data science industry.
+
+The analysis highlights that experience level and job title are the strongest predictors of salary, while company size and remote work also contribute interesting variations.
+
+---
+
+## 👤 Author
+
+**Mathieu Sze**  
+B.A. Computer Science & Mathematics (Statistics Concentration)  
+Aspiring Data Analyst
