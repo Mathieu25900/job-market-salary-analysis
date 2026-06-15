@@ -1,95 +1,58 @@
-Data Science Salary Analysis (SQL + Python Project)
+# 📊 Data Science Salary Analysis (SQL + Python Project)
 
-Overview
+## 🧠 Overview
 
-This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal was to understand how experience level, job title, company size, and remote work affect compensation.
+This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal is to understand how **experience level, job title, company size, and remote work arrangements** relate to compensation.
 
-I used a combination of SQL, Python (pandas, matplotlib), and exploratory data analysis techniques to uncover trends and present insights in a clear, visual way.
+I used **SQL, Python (pandas, matplotlib)**, and exploratory data analysis techniques to analyze trends and communicate insights visually.
 
-Dataset
+---
 
-The dataset contains data science job salaries including:
+## 📂 Dataset
 
-Job title
-Experience level (EN, MI, SE, EX)
-Salary (USD)
-Company size (S, M, L)
-Remote ratio (0%, 50%, 100%)
-Employment type
-Company location
+The dataset contains job-related salary information for data science roles, including:
 
-Source: Kaggle “Data Science Job Salaries” dataset
+- Job title  
+- Experience level (EN, MI, SE, EX)  
+- Salary (converted to USD)  
+- Company size (S, M, L)  
+- Remote ratio (0%, 50%, 100%)  
+- Employment type  
+- Company location  
+- Work year  
 
-Tools & Technologies
-Python (Pandas, NumPy, Matplotlib)
-SQL (SQLite)
-Jupyter Notebook
-Data visualization (Matplotlib)
-🔍 Key Questions Explored
-How does salary change with experience level?
-Do certain job titles pay significantly more than others?
-Does company size impact salary?
-Are remote jobs associated with higher pay?
-What are the highest-paying roles in the dataset?
-📊 Analysis Performed
-1. Experience Level vs Salary
+Source: Kaggle – Data Science Job Salaries dataset
 
-Used SQL aggregation to calculate average salaries by experience level.
+---
 
-Finding:
-Salary increases significantly with experience:
+## 🛠 Tools & Technologies
 
-Entry-level (EN) → lowest average salary
-Executive (EX) → highest average salary
-2. Job Title Analysis
+- Python (Pandas, NumPy, Matplotlib)
+- SQL (SQLite via `sqlite3`)
+- Jupyter Notebook
+- Data visualization (Matplotlib)
 
-Grouped salaries by job title and experience level.
+---
 
-Finding:
-Roles like:
+## 🔍 Key Questions Explored
 
-Data Engineer
-Data Scientist
-Machine Learning Scientist
-tend to have the highest earning potential.
-3. Company Size Impact
+- How does salary vary by experience level?
+- Which job titles have the highest salaries?
+- Does company size affect compensation?
+- Does remote work influence salary levels?
+- What combinations of job title and experience pay the most?
 
-Analyzed salary differences across small, medium, and large companies.
+---
 
-Finding:
-Large companies generally show higher average salaries compared to smaller organizations.
+## 🗄️ SQL Workflow
 
-4. Remote Work vs Salary
+The dataset was loaded into a SQLite database to enable structured querying.
 
-Compared salaries across remote (0%, 50%, 100%) roles.
+Example:
 
-Finding:
-Fully remote roles show higher average salaries in this dataset, though this may be influenced by role distribution.
-
-Example Visualizations
-Salary by experience level (bar chart)
-Salary by company size
-Salary by remote ratio
-Top-paying job titles
-Key Insights
-Experience level is the strongest predictor of salary
-Job title has a major impact on earning potential
-Large companies tend to pay more on average
-Remote work shows interesting salary variation patterns
-Salary distributions are highly skewed, with some high-end outliers
-
-What I Learned
-
-This project helped me strengthen my skills in:
-
-Writing SQL queries for real-world analysis
-Performing exploratory data analysis in Python
-Cleaning and transforming datasets
-Communicating insights through visualizations
-Thinking like a data analyst (not just coding)
-
-Future Improvements
-Build an interactive dashboard (Power BI or Tableau)
-Add geographic analysis (salary by country)
-Explore regression modeling for salary prediction
-Include more advanced statistical analysis
+```sql
+SELECT
+    experience_level,
+    AVG(salary_in_usd) AS avg_salary
+FROM salaries
+GROUP BY experience_level;
