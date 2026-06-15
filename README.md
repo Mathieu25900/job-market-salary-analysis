@@ -1,58 +1,95 @@
-# Data Science Job Market Salary Analysis
-## 📊 Overview
+Data Science Salary Analysis (SQL + Python Project)
 
-This project explores salary trends in the data science and analytics job market using a dataset of global job postings. The goal is to understand how factors such as experience level, job title, and remote work percentage influence salary distribution.
+Overview
 
-The analysis focuses on identifying patterns in compensation while also considering data reliability through sample sizes and distribution statistics.
+This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal was to understand how experience level, job title, company size, and remote work affect compensation.
 
----
+I used a combination of SQL, Python (pandas, matplotlib), and exploratory data analysis techniques to uncover trends and present insights in a clear, visual way.
 
-## 🎯 Objectives
+Dataset
 
-- Understand how salary varies by **experience level**
-- Analyze how salary varies across different job titles
-- Explore the relationship between **remote work and compensation**
-- Compare **mean vs median salaries** to detect outliers
-- Evaluate **data reliability using sample size**
+The dataset contains data science job salaries including:
 
----
+Job title
+Experience level (EN, MI, SE, EX)
+Salary (USD)
+Company size (S, M, L)
+Remote ratio (0%, 50%, 100%)
+Employment type
+Company location
 
-## 📁 Dataset
+Source: Kaggle “Data Science Job Salaries” dataset
 
-- Source: Data Science Job Salaries Dataset (Kaggle)
-- Approximately 600 job records
-- Features include:
-  - Job title
-  - Salary in USD
-  - Experience level
-  - Remote ratio
-  - Company location
-  - Employment type
+Tools & Technologies
+Python (Pandas, NumPy, Matplotlib)
+SQL (SQLite)
+Jupyter Notebook
+Data visualization (Matplotlib)
+🔍 Key Questions Explored
+How does salary change with experience level?
+Do certain job titles pay significantly more than others?
+Does company size impact salary?
+Are remote jobs associated with higher pay?
+What are the highest-paying roles in the dataset?
+📊 Analysis Performed
+1. Experience Level vs Salary
 
----
+Used SQL aggregation to calculate average salaries by experience level.
 
-## 🛠️ Tools & Libraries
+Finding:
+Salary increases significantly with experience:
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
+Entry-level (EN) → lowest average salary
+Executive (EX) → highest average salary
+2. Job Title Analysis
 
----
+Grouped salaries by job title and experience level.
 
-## 📊 Key Analysis
+Finding:
+Roles like:
 
-### 1. Salary vs Experience Level
-We compare average salary across different experience levels to understand how career progression impacts earnings.
+Data Engineer
+Data Scientist
+Machine Learning Scientist
+tend to have the highest earning potential.
+3. Company Size Impact
 
-```python
-# Average salary by experience level to understand career progression impact
-df.groupby("experience_level")["salary_in_usd"].mean()
-```
+Analyzed salary differences across small, medium, and large companies.
 
+Finding:
+Large companies generally show higher average salaries compared to smaller organizations.
+
+4. Remote Work vs Salary
+
+Compared salaries across remote (0%, 50%, 100%) roles.
+
+Finding:
+Fully remote roles show higher average salaries in this dataset, though this may be influenced by role distribution.
+
+Example Visualizations
+Salary by experience level (bar chart)
+Salary by company size
+Salary by remote ratio
+Top-paying job titles
 Key Insights
-Salary increases significantly with experience level, showing a clear career progression trend.
-Mean salaries are often higher than median values, indicating the presence of high-income outliers.
-Job titles with higher salaries tend to have smaller sample sizes, making them less statistically reliable.
-Data Scientist, Data Engineer, and Data Analyst roles represent the most stable and well-represented salary groups.
-Remote work shows variation in salary but is less consistent compared to experience level and job title.
+Experience level is the strongest predictor of salary
+Job title has a major impact on earning potential
+Large companies tend to pay more on average
+Remote work shows interesting salary variation patterns
+Salary distributions are highly skewed, with some high-end outliers
+
+What I Learned
+
+This project helped me strengthen my skills in:
+
+Writing SQL queries for real-world analysis
+Performing exploratory data analysis in Python
+Cleaning and transforming datasets
+Communicating insights through visualizations
+Thinking like a data analyst (not just coding)
+
+Future Improvements
+Build an interactive dashboard (Power BI or Tableau)
+Add geographic analysis (salary by country)
+Explore regression modeling for salary prediction
+Include more advanced statistical analysis
