@@ -1,16 +1,16 @@
-# 📊 Data Science Salary Analysis (SQL + Python Project)
+# Data Science Salary Analysis (SQL + Python Project)
 
-## 🧠 Overview
+## Overview
 
-This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal is to understand how **experience level, job title, company size, and remote work arrangements** relate to compensation.
+This project explores what factors influence salaries in data science roles using a real-world Kaggle dataset. The goal is to understand how experience level, job title, company size, and remote work arrangements relate to compensation.
 
 I used SQL, Python (pandas, matplotlib), and exploratory data analysis techniques to analyze trends and communicate insights visually.
 
-Rather than just looking at raw numbers, I focused on understanding patterns that can help explain how data roles are valued in the job market.
+Rather than just looking at raw numbers, I focused on understanding patterns that explain how data roles are valued in the job market.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The dataset contains job-related salary information for data science roles, including:
 
@@ -27,7 +27,7 @@ The dataset contains job-related salary information for data science roles, incl
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - Python (Pandas, NumPy, Matplotlib)  
 - SQL (SQLite via `sqlite3`)  
@@ -36,7 +36,7 @@ The dataset contains job-related salary information for data science roles, incl
 
 ---
 
-## ❓ Key Questions Explored
+## Key Questions Explored
 
 I approached this analysis by asking:
 
@@ -48,7 +48,7 @@ I approached this analysis by asking:
 
 ---
 
-## 🗄️ SQL Workflow
+## SQL Workflow
 
 To make the analysis more structured, I loaded the dataset into a SQLite database and used SQL queries to explore trends.
 
@@ -64,7 +64,7 @@ GROUP BY experience_level;
 
 ---
 
-## 📊 Key Insights
+## Key Insights
 
 From the analysis, a few clear patterns emerged:
 
@@ -78,7 +78,7 @@ Overall, salary is driven by a combination of experience, specialization, and co
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 The following visualizations were created using Python:
 
@@ -92,7 +92,7 @@ These visuals helped translate raw data into meaningful insights.
 
 ---
 
-## 🧠 Conclusion
+## Conclusion
 
 This project demonstrates how SQL and Python can be used together to analyze real-world salary trends in the data science industry.
 
@@ -100,7 +100,7 @@ The analysis highlights that experience level and job title are the strongest pr
 
 ---
 
-## 👤 Author
+## Author
 
 **Mathieu Sze**  
 B.A. Computer Science & Mathematics (Statistics Concentration)  
